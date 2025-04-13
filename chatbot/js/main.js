@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function callAPI(question) {
         console.log("Sending question:", question);
-        const response = await fetch("http://127.0.0.1:5000/get-answer", {
+        const response = await fetch("https://flaks-chatbot.onrender.com/get-answer", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
